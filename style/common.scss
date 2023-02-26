@@ -1,0 +1,57 @@
+// 百分比宽度
+.width-100p {
+  width: 100%;
+}
+
+// 背景色
+.bg-base {
+	background-color: #f0f0f0;
+}
+.bg-base-2 {
+	background-color: #6e757c;
+}
+.bg-white {
+	background-color: white;
+}
+
+// 文本排版
+.text-c {
+  text-align: center;
+}
+.text-l {
+  text-align: left;
+}
+.text-r {
+  text-align: right;
+}
+
+// 文本行高
+.line-h-36 {
+  line-height: 36rpx;
+}
+
+// 字体大小
+.font-36 {
+  font-size: 36rpx;
+}
+
+.font-w-500 {
+  font-weight: 500;
+}
+
+// 文本颜色
+.text-color-base {
+  color: $uni-text-color-base
+}
+
+.text-clolor-active {
+	color: #C30E23;
+}
+
+// flex布局
+.flex-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

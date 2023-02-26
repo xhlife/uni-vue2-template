@@ -1,0 +1,28 @@
+<!--miniprogram/custom-tab-bar/index.wxml-->
+<cover-view class="tab-bar">
+  <cover-view class="tab-bar-border"></cover-view>
+  <cover-view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+	<cover-view wx:if="{{item.pagePath === '/pages/mine/index' && !userPhone}}">
+		<button class="phone" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">
+			<cover-image src="{{selected === index ? item.selectedIconPath : item.iconPath}}"></cover-image>
+			<cover-view style="color: {{selected === index ? selectedColor : color}}">
+				<cover-view >{{item.text}}</cover-view>
+			</cover-view>
+		</button>
+	</cover-view>
+	<cover-view wx:else>
+		<cover-image src="{{selected === index ? item.selectedIconPath : item.iconPath}}"></cover-image>
+		<cover-view style="color: {{selected === index ? selectedColor : color}}">
+			<cover-view >{{item.text}}</cover-view>
+		</cover-view>
+	</cover-view>
+    <!-- 
+		<cover-view>
+			<cover-image src="{{selected === index ? item.selectedIconPath : item.iconPath}}"></cover-image>
+			<cover-view style="color: {{selected === index ? selectedColor : color}}">
+				<cover-view >{{item.text}}</cover-view>
+			</cover-view>
+		</cover-view>
+	 -->
+  </cover-view>
+</cover-view>

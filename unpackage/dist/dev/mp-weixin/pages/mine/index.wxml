@@ -1,0 +1,1 @@
+<view class="my"><uni-nav-bar class="width-100p" vue-id="2efac497-1" fixed="{{true}}" border="{{false}}" status-bar="{{true}}" bind:__l="__l" vue-slots="{{['default']}}"><view class="width-100p text-c font-36 flex-c text-color-base font-w-500">个人中心</view></uni-nav-bar><view class="bg"></view><view class="content"><view></view></view></view>
